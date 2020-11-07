@@ -107,6 +107,7 @@ email.addEventListener('blur', ()=>{
     console.log("email is blurred");
     // Validate email here
     let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+    // let regex = /^[a-z A-Z](a-zA-Z0-9){1,8}[(a-zA-Z0-9)(\.+\_+\-)]{0,4}@([a-zA-Z0-9]{2,10}\.){1,5}[a-zA-Z]{2,8}$/;
     let str = email.value;
     console.log(regex, str);
     if(regex.test(str)){
